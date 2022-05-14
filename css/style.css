@@ -18,7 +18,7 @@ section:first-child {
     position: relative;
     background-image: url(../img/halie-west-25xggax4bSA-unsplash.jpg);
     background-size: 100% 100%;
-    width: 40vw;
+    width: 35vw;
 }
 
 section:first-child div {
@@ -49,7 +49,40 @@ footer {
     height: 3vh;
 }
 
-section:last-child {
+section:last-of-type {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 65vw;
+}
+
+section article {
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 60vh;
+    /* padding: 200px 500px 0 90px; */
+    font-size: larger;
+    font-weight: bolder;
+    position: relative;
+}
+
+section > div:last-child {
+    background-color: yellow;
+    height: 30vh;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+section > div:nth-child(2) {
     background-color: red;
-    width: 60vw;
+    height: 100%;
+}
+
+article p {
+    padding: 0 380px 0px 70px;
+    position: absolute;
+    bottom: 80px;
 }
