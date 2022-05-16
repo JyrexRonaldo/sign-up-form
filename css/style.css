@@ -146,3 +146,16 @@ a {
     text-decoration: none;
 }
 
+.error {
+    border: 1px solid red;
+}
+
+span {
+    display: block;
+}
+
+.error + span:before {
+    content: '*Passwords do not match';
+    font-size: 10px;
+    color: red;
+}
