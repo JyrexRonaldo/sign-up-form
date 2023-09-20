@@ -1,0 +1,59 @@
+@font-face {
+    font-family: norse;
+    src: url(../assets/Norse-Bold.otf);
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, 
+*::after, 
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+}
+
+.logo {
+    background-size: cover;
+    background-image: url(../assets/halie-west-bush.jpg);
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+}
+
+.logo img {
+    width: 120px;
+    height: auto;
+}
+
+.logo img + p {
+    color: white;
+    font-family: norse;
+    font-size: 8rem;
+}
+
+.logo > p {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.logo a {
+    color: white;
+    text-decoration: none;
+}
