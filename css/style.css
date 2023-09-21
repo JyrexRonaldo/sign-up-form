@@ -185,3 +185,16 @@ button:active {
 .text a:active {
     color: red;
 }
+
+.error {
+    border: 1px solid red;
+    box-shadow: 1px 1px 1px 1px gray;
+    outline: none;
+    position: relative;
+}
+
+.error-message::after {
+    position: absolute;
+    content: "* Passwords do not match"; 
+    color: red; 
+}
