@@ -193,7 +193,7 @@ button:active {
     position: relative;
 }
 
-.error-message::after {
+.error + span::after {
     position: absolute;
     content: "* Passwords do not match"; 
     color: red; 
